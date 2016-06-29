@@ -12,7 +12,8 @@
       <paths name="www.htyou.com">
         <serverdata>
           <mappings>
-            <mapping deploy="/WEB-INF/single" local="$PROJECT_DIR$" web="/page/single/" />
+            <mapping deploy="/htonline-webroot/WEB-INF/single" local="$PROJECT_DIR$" web="/page/single/" />
+            <mapping deploy="/static/20160629_cruises" local="$PROJECT_DIR$/content" web="/static/20160629_cruises" />
           </mappings>
         </serverdata>
       </paths>
