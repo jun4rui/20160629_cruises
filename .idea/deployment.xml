@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" autoUpload="Always" serverName="www.htyou.com">
     <serverData>
-      <paths name="chm">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
       <paths name="www.htyou.com">
         <serverdata>
           <mappings>
-            <mapping deploy="/htonline-webroot/WEB-INF/single" local="$PROJECT_DIR$" web="/page/single/" />
+            <mapping deploy="/htonline-webroot/WEB-INF/single" local="$PROJECT_DIR$" web="/page/single" />
             <mapping deploy="/static/20160629_cruises" local="$PROJECT_DIR$/content" web="/static/20160629_cruises" />
           </mappings>
         </serverdata>
       </paths>
     </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
