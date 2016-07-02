@@ -38,13 +38,13 @@
 			$.getJSON('http://www.htyou.com/mobile/ipad_queryTourLine.action?pagesize=-1&KeyWords=%E4%BA%B2%E5%AD%90&isnative=1_2&jsoncallback=?',function(result){
 				BodyVM.guoneiList = result.value;
 			}).done(function(){
-
+				$('.tourlist').eq(0).show();
 			});
 			//载入国外线路数据
 			$.getJSON('http://www.htyou.com/mobile/ipad_queryTourLine.action?pagesize=-1&KeyWords=%E4%BA%B2%E5%AD%90&isnative=3_4&jsoncallback=?',function(result){
 				BodyVM.guojiList = result.value;
 			}).done(function(){
-
+				$('.tourlist').eq(1).show();
 			});
 		});
 	</script>
@@ -57,6 +57,7 @@
 		margin-bottom: -1px;
 		width:640px;
 		margin:0 auto;
+		display:none;
 	}
 	.tourunit {
 		display: block;
@@ -117,7 +118,7 @@
 		<div class="title">{{unit.tourproname}}</div>
 		<div class="price">&yen;{{unit.leastprice}}元</div>
 		<div class="oldprice">&yen;元</div>
-		<a ms-attr-href="{{unit.lineid}}">
+		<a ms-attr-href="/weixin_h5/tour-detail.html?lineid={{unit.lineid}}">
 			<img src="/static/20160629_cruises/btn_paynow.png" alt="">
 		</a>
 	</div>
@@ -131,7 +132,7 @@
 		<div class="title">{{unit.tourproname}}</div>
 		<div class="price">&yen;{{unit.leastprice}}元</div>
 		<div class="oldprice">&yen;元</div>
-		<a ms-attr-href="{{unit.lineid}}">
+		<a ms-attr-href="/weixin_h5/tour-detail.html?lineid={{unit.lineid}}">
 			<img src="/static/20160629_cruises/btn_paynow.png" alt="">
 		</a>
 	</div>
