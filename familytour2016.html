@@ -42,13 +42,13 @@
 			avalon.scan();
 
 			//载入国内线路数据
-			$.getJSON('http://www.htyou.com/mobile/ipad_queryTourLine.action?pagesize=-1&KeyWords=%E4%BA%B2%E5%AD%90&isnative=1_2&sortCol=tourproname&sortWay=desc&jsoncallback=?', function (result) {
+			$.getJSON('http://www.htyou.com/mobile/ipad_queryTourLine.action?pagesize=-1&KeyWords=%E4%BA%B2%E5%AD%90&isnative=1_2&sortCol=tourproname,leastprice&sortWay=desc&jsoncallback=?', function (result) {
 				BodyVM.guoneiList = result.value;
 			}).done(function () {
 				$('.tourlist').eq(0).show();
 			});
 			//载入国外线路数据
-			$.getJSON('http://www.htyou.com/mobile/ipad_queryTourLine.action?pagesize=-1&KeyWords=%E4%BA%B2%E5%AD%90&isnative=3_4&sortCol=tourproname&sortWay=desc&jsoncallback=?', function (result) {
+			$.getJSON('http://www.htyou.com/mobile/ipad_queryTourLine.action?pagesize=-1&KeyWords=%E4%BA%B2%E5%AD%90&isnative=3_4&sortCol=tourproname,leastprice&sortWay=desc&jsoncallback=?', function (result) {
 				BodyVM.guojiList = result.value;
 			}).done(function () {
 				$('.tourlist').eq(1).show();
