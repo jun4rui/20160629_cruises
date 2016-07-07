@@ -163,5 +163,66 @@
 	})();
 </script>
 <!--/百度统计工具-->
+
+<!--在线客服模块-->
+<style>
+	#online-tools {
+		width:66px;
+		height:198px;
+		position:fixed;
+		right:0;
+		bottom:200px;
+		z-index:99999;
+	}
+	#online-tools a>div {
+		cursor: pointer;
+		width:66px;
+		height:66px;
+		position:absolute;
+		z-index:999999;
+
+	}
+	#online-tools div.online {
+		right: 0;
+		top: 132px;
+		width: 66px;
+		height: 66px;
+		background: url(/static/2016/tools_off.png) no-repeat top left;
+		background-position-y: 0px;
+	}
+
+	#online-tools div.phone {
+		right:0;
+		top:198px;
+		width:66px;
+		height:66px;
+		background: url(/static/2016/tools_off.png) no-repeat top left;
+		background-position-y: -198px;
+	}
+	#online-tools div.return2top {
+		right:0;
+		top:264px;
+		width:66px;
+		height:66px;
+		background: url(/static/2016/tools_off.png) no-repeat top left;
+		background-position-y: -264px;
+	}
+</style>
+<div id="online-tools">
+	<!--在线客服-->
+	<!--<a href="http://www15.53kf.com/webCompany.php?arg=10102842&style=1" target="_blank">-->
+	<a href="http://p.qiao.baidu.com/cps/chat?siteId=1606197&userId=5231856" target="_blank">
+		<div class="online"></div>
+	</a>
+	<!--官方电话-->
+	<a href="tel:073155555555">
+		<div class="phone"></div>
+	</a>
+	<!--回到顶部-->
+	<a href="javascript:void(0)">
+		<div class="return2top" onclick="$('body,html').animate({scrollTop:0},600);"></div>
+	</a>
+</div>
+<!--/在线客服模块-->
 </body>
 </html>
