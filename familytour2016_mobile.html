@@ -6,6 +6,20 @@
 	<meta name="viewport" content="width=640, user-scalable=no">
 	<script src="/static/jslib/jquery/jquery-1.12.3.min.js" charset="utf-8"></script>
 	<script src="/static/jslib/avalon1.5/avalon.js" charset="utf-8"></script>
+	<script>
+		// 20160708 加入CSS样式函数
+		function addGlobalStyle(css) {
+			var head, style;
+			head = document.getElementsByTagName('head')[0];
+			if (!head) { return; }
+			style = document.createElement('style');
+			style.type = 'text/css';
+			style.innerHTML = css;
+			head.appendChild(style);
+		}
+		//去掉百度商桥
+		addGlobalStyle('#newBridge {display:none !important;}');
+	</script>
 	<style>
 		body {
 			padding: 0;
